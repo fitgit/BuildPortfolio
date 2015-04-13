@@ -1,0 +1,142 @@
+<html>
+  <head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, minimum-scale=1.0, initial-scale=1.0, user-scalable=yes">
+      <link rel="stylesheet" href="css/bootstrap.min.css">
+       <link rel="stylesheet" href="css/main.css">
+      <!--link href="http://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css"-->
+      <link href='http://fonts.googleapis.com/css?family=Courgette' rel='stylesheet' type='text/css'>
+      <script type="text/javascript" src="js/jquery-2.1.3.js"></script>
+      <script type="text/javascript" src="js/bootstrap.min.js"></script>
+       <style type="text/css">
+        @media screen and (max-width:800px){
+          body{
+            font-size:3.0vw;
+          }
+          h2 {
+            font-size: 5.0vw;
+          }
+          h3{
+            font-size: 4.0vw;
+          }
+
+          #fp_modal_img,#work_modal_img,#cb_modal_img,#udacity_modal_img{
+            display: none;
+          }
+          #fp_modal_text,#work_modal_text,#cb_modal_text,#udacity_modal_text{
+            font-size: 4.0vw;
+          }
+        }
+        </style>
+  </head>
+  <body>
+    <div class="container">
+    <div class="row">
+      <div class="col-md-6">
+        <img id="profile" class="img_responsive" src="images/profile.jpg" style="width:10.0vw">
+      </div>
+      <div class="col-md-6 text-right">
+        <h2 class="text-uppercase">Sudha Parvangada</h2>
+        <h3>Once upon .....my day!</h3>
+      </div>
+    </div>
+    <div  class="row">
+      <hr style="height:2px;border:none;color:#333;background-color:#E70C0C"/>
+      <img class="img_responsive" src="images/Family_Portrait.jpg"  data-toggle="modal" data-target="#familyModal">
+    </div>
+    <div class="row">
+      <h3 class="text-center">Family Time</h3>
+    </div>
+    <div class="row  text-center">
+      <div class="col-md-4">
+        <img class="img_responsive" src="images/work.jpg"  data-toggle="modal" data-target="#workModal">
+        <h3>Work</h3>
+      </div>
+       <div class="col-md-4">
+         <img class="img_responsive" src="images/coffee_break.jpg"  data-toggle="modal" data-target="#cbModal">
+        <h3>Coffee Break</h3>
+      </div>
+    <div class="col-md-4">
+         <img class="img_responsive" src="images/Udacity_Logo.jpg" data-toggle="modal" data-target="#udacityModal">
+        <h3>Nano Degree</h3>
+      </div>
+    </div>
+  </div> 
+<!-- Modal -->
+<div class="modal fade" id="familyModal" tabindex="-1" role="dialog" aria-labelledby="familyModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h4 class="modal-title text-center" id="familyModalLabel">Favorite Time, FAMILY TIME!</h4>
+      </div>
+      <div class="modal-body">
+        <div>
+          <img id="fp_modal_img" class="img-responsive" src="images/family_portrait_modal.jpg">
+        </div>
+        <br>
+        <p id="fp_modal_text">I am blessed with two beautiful, highly opionionated daughters and a tolerant husband.Most of my time at home is spent on homework checking,extra circulatr activities ,feeding the family and ofcourse the number 1 job -Being the home janitor. My kids currently are into soccer,chess and piano and we are trying to live our childhood all over again(sometimes going a little overboard!).</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="workModal" tabindex="-1" role="dialog" aria-labelledby="workModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h4 class="modal-title text-center" id="workModalLabel">Work Time!</h4>
+      </div>
+      <div class="modal-body">
+        <img id="work_modal_img" class="img-responsive" src="images/work_modal.jpg">
+        <br>
+        <p id="work_modal_text">
+        I am at present working on openCV,tesseract OCR,maven and groovy projects. My team won the hackathon(an all night event where we come up with ideas and implement them) within our company. Here's the gist of what we did!.
+
+        We set up real (toy) tracks with train & truck on them, used a laptop as the intelligent camera, video analytics by opencv, WebRTC SDK for video calls, integrated with *** platform for notifications to first responders and used node.js/socket.io for server and glue to pull all the pieces together. Our team name was ‘Crossing Gaurds’.</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="modal fade" id="cbModal" tabindex="-1" role="dialog" aria-labelledby="cbModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h4 class="modal-title text-center" id="cbModalLabel">Coffee Break!</h4>
+      </div>
+      <div class="modal-body">
+        <img id="cb_modal_img" class="img-responsive" src="images/coffee_break_modal.jpg">
+        <br>
+         <p id="cb_modal_text">
+        Time to head out to java city, meet with friends and talk about anything from Bee hives to Rocket Science. I do cherish my hazel nut coffee!.</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="modal fade" id="udacityModal" tabindex="-1" role="dialog" aria-labelledby="udacityModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h4 class="modal-title text-center" id="udacityModalLabel">Nano Degree videos!</h4>
+      </div>
+      <div class="modal-body">
+        <img id="udacity_modal_img" class="img-responsive" src="images/Udacity_Logo_modal.jpg">
+        <br>
+        <p id="udacity_modal_text">
+        Time to look at Cameron Pittman(at least for now) and the Google Greats enlightening us at becoming Responsive Web Developers!.</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+</body></html>
